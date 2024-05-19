@@ -1,13 +1,13 @@
 <template>
     <nav class="nav">
         <div class="nav_container">
-            <NuxtLink to="/components/link">
+            <NuxtLink to="/about">
                 Обо мне
             </NuxtLink>
-            <NuxtLink to="/components/link">
+            <NuxtLink to="/delivery">
                 Доставка
             </NuxtLink>
-            <NuxtLink to="/components/link">
+            <NuxtLink to="/contacts">
                 Контакты
             </NuxtLink>
         </div>

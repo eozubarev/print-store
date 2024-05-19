@@ -1,0 +1,14 @@
+<script setup lang="ts">
+
+</script>
+
+<template>
+    <div>
+        <!-- This page correctly has only one single root element -->
+        Delivery
+    </div>
+</template>
+
+<style scoped lang="scss">
+
+</style>

@@ -1,12 +1,10 @@
 <template>
     <div class="products">
-        <UContainer>
-            <SectionShop
-                    title="АВТОРСКИЕ ПРИНТЫ"
-                    description="Мои уникальные фото принты выского качества. Они станут отличным украшением для вашего дома."
-            />
-            <CardShop class="products__card"/>
-        </UContainer>
+        <SectionShop
+                title="АВТОРСКИЕ ПРИНТЫ"
+                description="Мои уникальные фото принты выского качества. Они станут отличным украшением для вашего дома."
+        />
+        <CardShop class="products__card"/>
     </div>
 </template>
 <style scoped lang="scss">
@@ -20,7 +18,7 @@
 }
 </style>
 <script setup lang="ts">
-import CardShop from "~/components/CardShop/CardShop.vue";
+import Print from "~/components/CardShop/CardShop.vue";
 import SectionShop from "~/components/SectionShop/SectionShop.vue";
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card_container">
-            <div class="card__item" v-for="card in cards" :key="card.id">
+            <div class="card__item" v-for="card in printStore.getPrintsData" :key="card.id">
                 <div class="card__img">
                     <swiper :slides-p:er-view="1"
                             autoplay="autoplay"
@@ -47,6 +47,9 @@
 <script setup lang="ts">
 import {Swiper, SwiperSlide} from 'swiper/vue';
 import 'swiper/css';
+import {usePrintStore} from "~/store/prints";
+
+const printStore = usePrintStore();
 
 const onSwiper = (swiper) => {
     console.log(swiper);
@@ -57,49 +60,7 @@ const onSlideChange = () => {
 
 const isOpen = ref(false)
 
-interface card {
-    id: number;
-    name: string;
-    description: string;
-    price: number;
-    img: {
-        src: string;
-        alt?: string;
-    }
-}
 
-const cards: card[] = [
-    {
-        id: 1,
-        name: 'Оля Астер',
-        description: 'Потрет Оли на матовом покрытии',
-        price: 15_000,
-        img: {
-            src: '/images/1.JPG',
-            alt: 'Потрет Оли'
-        }
-    },
-    {
-        id: 2,
-        name: 'Таня Асмодеус',
-        description: 'Потрет Тани на матовом покрытии',
-        price: 15_000,
-        img: {
-            src: '/images/2.JPG',
-            alt: 'Потрет Тани'
-        }
-    },
-    {
-        id: 3,
-        name: 'Даша',
-        description: 'Потрет Дани на матовом покрытии',
-        price: 15_000,
-        img: {
-            src: '/images/3.JPG',
-            alt: 'Потрет Даши'
-        }
-    }
-]
 </script>
 
 <style scoped lang="scss">

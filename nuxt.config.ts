@@ -3,11 +3,15 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: 'Магазин принтов - Евгений Зубарев',
-            description: 'Откройте для себя мир авторских фото-принтов в магазине Евгения Зубарева!  Широкий выбор жанров, высокое качество печати,  различные форматы. Создайте уютную атмосферу в вашем доме с помощью уникальных фотографий!\n'
         },
     },
     devtools: {enabled: true},
-    modules: ["@nuxt/ui", "@nuxt/image"],
+    modules: [
+        "@nuxt/ui",
+        "@nuxt/image",
+        '@pinia/nuxt',
+        'nuxt-module-eslint-config'
+    ],
     css: ['~/assets/css/main.css'],
     vite: {
         css: {
@@ -17,5 +21,8 @@ export default defineNuxtConfig({
                 }
             }
         }
+    },
+    eslintConfig: {
+        setup: true
     }
 })
