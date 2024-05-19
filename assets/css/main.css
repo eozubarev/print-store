@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'UnboundedExtraBold';
+    src: url('/public/fonts/unbounded/Unbounded-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnboundedBold';
+    src: url('/public/fonts/unbounded/Unbounded-Bold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnboundedRegular';
+    src: url('/public/fonts/unbounded/Unbounded-Black.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnboundedLight';
+    src: url('/public/fonts/unbounded/Unbounded-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnboundedExtraLight';
+    src: url('/public/fonts/unbounded/Unbounded-ExtraLight.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoyuzGrotesk';
+    src: url('/public/fonts/soyuz-grotesk/Soyuz-Grotesk.otf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
