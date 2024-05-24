@@ -9,8 +9,17 @@ export const usePrintStore = defineStore('prints', {
     }),
     getters: {
         getPrintsData(): Print[] {
+            this.prints = printsData;
             return printsData;
-        }
+        },
     },
-    actions: {},
+    actions: {
+        getPrintCard(prints: Print[], id: any): any {
+            prints.find((print) => {
+                if (print.id === id) {
+                    return print
+                }
+            })
+        }
+    }
 });

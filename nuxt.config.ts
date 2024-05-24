@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         'nuxt-module-eslint-config'
     ],
+    ssr: true,
     css: ['~/assets/css/main.css'],
     vite: {
         css: {

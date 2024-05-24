@@ -18,8 +18,17 @@
 }
 </style>
 <script setup lang="ts">
-import Print from "~/components/CardShop/CardShop.vue";
 import SectionShop from "~/components/SectionShop/SectionShop.vue";
+import TodoService from "~/services/TodoService";
+import type { Todo } from "~/types/todo";
+
+async function getTodoData() {
+    console.log('getTodo')
+    const todo: Todo = await TodoService.getTodo(1);
+    console.log(todo)
+}
+
+getTodoData()
 </script>
 
 
