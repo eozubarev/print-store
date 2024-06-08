@@ -13,17 +13,6 @@ export const printsData: Print[] = [
         }]
     },
     {
-        id: 2,
-        name: 'Таня Асмодеус',
-        description: 'Потрет Тани на матовом покрытии',
-        price: 15_000,
-        images: [{
-            id: 2,
-            src: '/images/2.JPG',
-            alt: 'Потрет Тани'
-        }]
-    },
-    {
         id: 3,
         name: 'Даша',
         description: 'Потрет Дани на матовом покрытии',

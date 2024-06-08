@@ -5,21 +5,12 @@ import {printsData} from "~/mock/printsData";
 export const usePrintStore = defineStore('prints', {
     state: () => ({
         initialLoad: false,
-        prints: [] as Print[]
+        prints: printsData
     }),
-    getters: {
-        getPrintsData(): Print[] {
-            this.prints = printsData;
-            return printsData;
-        },
-    },
+    getters: {},
     actions: {
-        getPrintCard(prints: Print[], id: any): any {
-            prints.find((print) => {
-                if (print.id === id) {
-                    return print
-                }
-            })
+        getPrintCard(id: number): Print | undefined {
+            return printsData.find(print => print.id === id)
         }
     }
 });
