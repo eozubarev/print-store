@@ -2,13 +2,13 @@
     <nav class="nav">
         <div class="nav_container">
             <NuxtLink to="/about">
-                Обо мне
+                {{ langStore.lang === Language.RU ? 'Обо мне' : 'About me' }}
             </NuxtLink>
             <NuxtLink to="/delivery">
-                Доставка
+                {{ langStore.lang === Language.RU ? 'Доставка' : 'Delivery' }}
             </NuxtLink>
             <NuxtLink to="/contacts">
-                Контакты
+                {{ langStore.lang === Language.RU ? 'Контакты' : 'Contacts' }}
             </NuxtLink>
         </div>
     </nav>
@@ -32,5 +32,8 @@
 }
 </style>
 <script setup lang="ts">
+import {useLangStore} from "~/store/lang";
+import {Language} from "~/types/lang";
 
+const langStore = useLangStore();
 </script>

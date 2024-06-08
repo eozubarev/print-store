@@ -30,8 +30,8 @@
                         {{ card.description }}
                     </div>
                 </NuxtLink>
-                    <card-shop-price :price="card.price"/>
-                    <card-shop-buy @click="isOpen = true"/>
+                <card-shop-price :price="card.price"/>
+                <card-shop-buy @click="isOpen = true"/>
             </div>
         </div>
         <USlideover v-model="isOpen">
@@ -95,6 +95,7 @@ const isOpen = ref(false)
 
   &__img {
     transition: all $defaultTransitionDuration;
+
     &:hover {
       transform: scale(1.04);
     }
