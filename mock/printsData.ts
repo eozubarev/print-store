@@ -9,7 +9,7 @@ export const printsData: Print[] = [
         price: 15_000,
         images: [{
             id: 1,
-            src: '/images/1.JPG',
+            src: 'images/1.JPG',
             alt: 'Потрет Оли'
         }]
     },
@@ -21,7 +21,7 @@ export const printsData: Print[] = [
         vendorCode: 'ПР-003',
         images: [{
             id: 3,
-            src: '/images/3.JPG',
+            src: 'images/3.JPG',
             alt: 'Потрет Даши'
         }]
     }
