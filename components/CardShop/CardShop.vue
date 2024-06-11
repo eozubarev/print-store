@@ -14,7 +14,7 @@
                                 @slideChange="onSlideChange"
                         >
                             <swiper-slide>
-                                <NuxtImg v-for="image in card.images"
+                                <img v-for="image in card.images"
                                          :key="image.id"
                                          :src="image.src"
                                          :alt="image.alt"

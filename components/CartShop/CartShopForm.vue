@@ -6,7 +6,7 @@
             <div class="cart-form__product" v-if="props.print">
                 <div class="cart-form__product_left">
                     <div class="cart-form__product_img">
-                        <NuxtImg v-for="image in props.print.images"
+                        <img v-for="image in props.print.images"
                                  :key="image.id"
                                  :src="image.src"
                                  :alt="image.alt"

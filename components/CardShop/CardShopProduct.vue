@@ -3,7 +3,7 @@
         <div class="print-product_container">
             <div v-if="printCard" class="print-product__item">
                 <div class="print-product__image">
-                    <NuxtImg v-for="image in printCard.images"
+                    <img v-for="image in printCard.images"
                              :key="image.id"
                              :src="image.src"
                              :alt="image.alt"
