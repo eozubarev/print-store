@@ -27,12 +27,23 @@ const props = defineProps({
     font-size: 110px;
     font-family: $soyuzGrotesk;
     letter-spacing: 5px;
+
+    @media all and (max-width: 767px) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 15px;
+    }
   }
 
   &_subtitle {
     font-size: 29px;
     padding: 0 60px;
     font-family: $unboundedExtraLight;
+
+    @media all and (max-width: 767px) {
+      font-size: 20px;
+      padding: 0 0;
+    }
   }
 
   &_description {

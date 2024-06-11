@@ -68,12 +68,15 @@ const isOpen = ref(false)
 .print-product {
   &__item {
     display: flex;
+
+    @media all and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__image {
     max-width: 750px;
     margin-right: 30px;
-
     & img {
       border-radius: 10px;
     }
@@ -84,6 +87,10 @@ const isOpen = ref(false)
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media all and (max-width: 767px) {
+      align-items: center;
+    }
 
     & h3 {
       font-size: 24px;

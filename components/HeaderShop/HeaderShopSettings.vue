@@ -10,6 +10,10 @@
   display: flex;
   align-items: center;
 
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+
   &_lang {
     margin-left: 30px;
   }

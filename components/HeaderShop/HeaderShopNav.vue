@@ -1,9 +1,9 @@
 <template>
     <nav class="nav">
         <div class="nav_container">
-<!--            <NuxtLink to="/about">-->
-<!--                {{ langStore.lang === Language.RU ? 'Обо мне' : 'About me' }}-->
-<!--            </NuxtLink>-->
+            <!--            <NuxtLink to="/about">-->
+            <!--                {{ langStore.lang === Language.RU ? 'Обо мне' : 'About me' }}-->
+            <!--            </NuxtLink>-->
             <NuxtLink to="/delivery">
                 {{ langStore.lang === Language.RU ? 'Доставка' : 'Delivery' }}
             </NuxtLink>
@@ -17,6 +17,10 @@
 .nav {
   &_container {
     display: flex;
+
+    @media all and (max-width: 767px) {
+      display: none;
+    }
 
     & a {
       margin: 0 15px;

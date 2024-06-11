@@ -23,6 +23,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+
+    @media all and (max-width: 767px) {
+      justify-content: center;
+    }
   }
 }
 </style>

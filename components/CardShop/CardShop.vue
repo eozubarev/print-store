@@ -11,7 +11,7 @@
                              :key="image.id"
                              :src="image.src"
                              :alt="image.alt"
-                             :style="{maxWidth: card.vendorCode === 'KV3-250D' ? '600px' : '100%'}"
+                             :style="{maxWidth: card.vendorCode === 'KV3-250D' ? '55%' : '100%'}"
                         />
                     </div>
                     <div class="card__name">
