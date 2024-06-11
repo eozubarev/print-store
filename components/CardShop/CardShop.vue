@@ -7,20 +7,12 @@
             >
                 <NuxtLink :to="`/product/${card.id}`">
                     <div class="card__img">
-                        <swiper :slides-p:er-view="1"
-                                autoplay="autoplay"
-                                :space-between="0"
-                                @swiper="onSwiper"
-                                @slideChange="onSlideChange"
-                        >
-                            <swiper-slide>
-                                <img v-for="image in card.images"
-                                         :key="image.id"
-                                         :src="image.src"
-                                         :alt="image.alt"
-                                />
-                            </swiper-slide>
-                        </swiper>
+                        <img v-for="image in card.images"
+                             :key="image.id"
+                             :src="image.src"
+                             :alt="image.alt"
+                             :style="{maxWidth: card.vendorCode === 'KV3-250D' ? '600px' : '100%'}"
+                        />
                     </div>
                     <div class="card__name">
                         {{ card.name }}
@@ -41,20 +33,10 @@
     </div>
 </template>
 <script setup lang="ts">
-import {Swiper, SwiperSlide} from 'swiper/vue';
-import 'swiper/css';
 import {usePrintStore} from "~/store/prints";
 import CardShopPrice from "~/components/CardShop/CardShopPrice.vue";
 
 const printStore = usePrintStore();
-
-const onSwiper = (swiper) => {
-    console.log(swiper);
-};
-const onSlideChange = () => {
-    console.log('slide change');
-};
-
 const isOpen = ref(false)
 </script>
 
@@ -74,7 +56,7 @@ const isOpen = ref(false)
   }
 
   &__item {
-    margin: 30px 10px;
+    margin: 50px 10px;
     text-align: center;
   }
 
@@ -93,7 +75,14 @@ const isOpen = ref(false)
   }
 
   &__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: all $defaultTransitionDuration;
+
+    & img {
+      border-radius: 10px;
+    }
 
     &:hover {
       transform: scale(1.04);

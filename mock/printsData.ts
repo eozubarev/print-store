@@ -2,27 +2,51 @@ import type {Print} from "~/types/print";
 
 export const printsData: Print[] = [
     {
-        id: 1,
-        name: 'Оля Астер',
-        description: 'Потрет Оли на матовом покрытии',
-        vendorCode: 'ПР-002',
-        price: 15_000,
+        id: 2,
+        name: 'Бессмысленность',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        vendorCode: 'П-001',
+        price: 7_000,
         images: [{
             id: 1,
-            src: 'images/1.JPG',
-            alt: 'Потрет Оли'
+            src: 'images/net-sil.JPG',
+            alt: 'Постер Бессмысленность'
         }]
     },
     {
         id: 3,
-        name: 'Даша',
-        description: 'Потрет Дани на матовом покрытии',
-        price: 15_000,
-        vendorCode: 'ПР-003',
+        name: 'Надежда',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        price: 7_000,
+        vendorCode: 'П-002',
         images: [{
             id: 3,
-            src: 'images/3.JPG',
-            alt: 'Потрет Даши'
+            src: 'images/nadezhda.JPG',
+            alt: 'Постер Надежда'
         }]
-    }
+    },
+    {
+        id: 4,
+        name: 'Матрица',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        price: 7_000,
+        vendorCode: 'П-002',
+        images: [{
+            id: 3,
+            src: 'images/matrix.JPG',
+            alt: 'Постер Матрица'
+        }]
+    },
+    {
+        id: 1,
+        name: 'Кинопленка Kodak Vision 3 - 250D',
+        description: 'Профессиональная пленка высокого качества для фотографии (35мм)',
+        vendorCode: 'KV3-250D',
+        price: 1_500,
+        images: [{
+            id: 1,
+            src: 'images/plenka.jpg',
+            alt: 'Кинопленка'
+        }]
+    },
 ]

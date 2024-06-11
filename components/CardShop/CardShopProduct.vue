@@ -4,31 +4,48 @@
             <div v-if="printCard" class="print-product__item">
                 <div class="print-product__image">
                     <img v-for="image in printCard.images"
-                             :key="image.id"
-                             :src="image.src"
-                             :alt="image.alt"
+                         :key="image.id"
+                         :src="`../${image.src}`"
+                         :alt="image.alt"
                     />
                 </div>
                 <div class="print-product__about">
                     <h3>{{ printCard.name }}</h3>
-                    <span>Артикул: ДК1001-3</span>
+                    <span>Артикул: {{ printCard.vendorCode }}</span>
                     <card-shop-price :price="printCard.price"/>
                     <card-shop-buy @click="isOpen = true"/>
                     <br>
                     <br>
-                    <p>Технические характеристики бумаги:</p>
-                    <p><span>Производитель:</span> Innova Art</p>
-                    <p><span>Тип покрытия:</span> Матовое</p>
-                    <p><span>Текстура:</span> Легкая</p>
-                    <p><span>Цвет:</span> Натуральный белый</p>
-                    <p><span>Тип чернил:</span> Пигментные чернила</p>
-                    <p><span>Размер принта:</span> 60x80см</p>
-                    <br>
-                    <ul>
-                        <li>• Автограф от Евгения Зубарева</li>
-                        <li>• Бесплатная доставка по Москве до двери</li>
-                        <li>• Доставка по России от 2 до 7 дней до пункта СДЭК</li>
-                    </ul>
+                    <template v-if="printCard.vendorCode !== 'KV3-250D'">
+                        <p>Технические характеристики бумаги:</p>
+                        <p><span>Производитель:</span> Innova Art</p>
+                        <p><span>Тип покрытия:</span> Матовое</p>
+                        <p><span>Текстура:</span> Легкая</p>
+                        <p><span>Цвет:</span> Натуральный белый</p>
+                        <p><span>Тип чернил:</span> Пигментные чернила</p>
+                        <p><span>Размер принта:</span> 60x80см</p>
+                        <br>
+                        <ul>
+                            <li>• Автограф от Евгения Зубарева</li>
+                            <li>• Бесплатная доставка по Москве до двери</li>
+                            <li>• Доставка по России от 2 до 7 дней до пункта СДЭК</li>
+                        </ul>
+                    </template>
+                    <template v-else>
+                        <p>Технические характеристики пленки:</p>
+                        <p><span>Тип пленки:</span> Цветная негативная</p>
+                        <p><span>Производитель:</span> Kodak</p>
+                        <p><span>Процесс проявки:</span> ECN-II</p>
+                        <p><span>Кол-во кадров:</span> 36</p>
+                        <p><span>Размер:</span> 35mm</p>
+                        <p><span>ISO:</span> 200</p>
+                        <br>
+                        <ul>
+                            <li>• Авторская открытка с автограф от Евгения Зубарева</li>
+                            <li>• Бесплатная доставка по Москве до двери</li>
+                            <li>• Доставка по России от 2 до 7 дней до пункта СДЭК</li>
+                        </ul>
+                    </template>
                 </div>
             </div>
         </div>
@@ -56,6 +73,10 @@ const isOpen = ref(false)
   &__image {
     max-width: 750px;
     margin-right: 30px;
+
+    & img {
+      border-radius: 10px;
+    }
   }
 
   &__about {
