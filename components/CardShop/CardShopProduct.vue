@@ -23,7 +23,7 @@
                         <p><span>Текстура:</span> Легкая</p>
                         <p><span>Цвет:</span> Натуральный белый</p>
                         <p><span>Тип чернил:</span> Пигментные чернила</p>
-                        <p><span>Размер принта:</span> 60x80см</p>
+                        <p><span>Размер принта:</span> {{ printCard.size }}</p>
                         <br>
                         <ul>
                             <li>• Автограф от Евгения Зубарева</li>
@@ -37,7 +37,7 @@
                         <p><span>Производитель:</span> Kodak</p>
                         <p><span>Процесс проявки:</span> ECN-II</p>
                         <p><span>Кол-во кадров:</span> 36</p>
-                        <p><span>Размер:</span> 35mm</p>
+                        <p><span>Размер:</span> {{ printCard.size }}</p>
                         <p><span>ISO:</span> 200</p>
                         <br>
                         <ul>

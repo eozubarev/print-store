@@ -7,6 +7,7 @@ export const printsData: Print[] = [
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         vendorCode: 'П-001',
         price: 13_000,
+        size: '50x75 см',
         images: [{
             id: 1,
             src: 'images/net-sil.JPG',
@@ -19,6 +20,7 @@ export const printsData: Print[] = [
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         price: 13_000,
         vendorCode: 'П-002',
+        size: '50x75 см',
         images: [{
             id: 3,
             src: 'images/nadezhda.JPG',
@@ -31,6 +33,7 @@ export const printsData: Print[] = [
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         price: 13_000,
         vendorCode: 'П-002',
+        size: '50x75 см',
         images: [{
             id: 3,
             src: 'images/matrix.JPG',
@@ -43,6 +46,7 @@ export const printsData: Print[] = [
         description: 'Профессиональная пленка высокого качества для фотографии (35мм)',
         vendorCode: 'KV3-250D',
         price: 1_500,
+        size: '35mm',
         images: [{
             id: 1,
             src: 'images/plenka.jpg',

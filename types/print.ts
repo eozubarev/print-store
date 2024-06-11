@@ -10,5 +10,6 @@ export interface Print {
     description: string;
     price: number;
     vendorCode: string;
+    size: string;
     images: Image[]
 }
