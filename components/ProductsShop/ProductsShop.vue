@@ -1,8 +1,8 @@
 <template>
     <div class="products">
         <SectionShop
-                title="АВТОРСКИЕ ПРИНТЫ"
-                description="Мои уникальные фото принты высокого качества. Они станут отличным украшением для вашего дома"
+                :title="langStore.lang === Language.ENG ? 'Author\'s prints' : 'Авторские принты'"
+                :description="langStore.lang === Language.ENG ? 'My unique high quality photo prints. They will be a great decoration for your home' : 'Мои уникальные фото принты высокого качества. Они станут отличным украшением для вашего дома'"
         />
         <CardShop class="products__card"/>
     </div>
@@ -19,16 +19,10 @@
 </style>
 <script setup lang="ts">
 import SectionShop from "~/components/SectionShop/SectionShop.vue";
-import TodoService from "~/services/TodoService";
-import type { Todo } from "~/types/todo";
+import {useLangStore} from "~/store/lang";
+import {Language} from "~/types/lang";
 
-async function getTodoData() {
-    console.log('getTodo')
-    const todo: Todo = await TodoService.getTodo(1);
-    console.log(todo)
-}
-
-getTodoData()
+const langStore = useLangStore();
 </script>
 
 

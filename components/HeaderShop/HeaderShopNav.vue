@@ -1,9 +1,9 @@
 <template>
     <nav class="nav">
         <div class="nav_container">
-            <NuxtLink to="/about">
-                {{ langStore.lang === Language.RU ? 'Обо мне' : 'About me' }}
-            </NuxtLink>
+<!--            <NuxtLink to="/about">-->
+<!--                {{ langStore.lang === Language.RU ? 'Обо мне' : 'About me' }}-->
+<!--            </NuxtLink>-->
             <NuxtLink to="/delivery">
                 {{ langStore.lang === Language.RU ? 'Доставка' : 'Delivery' }}
             </NuxtLink>
