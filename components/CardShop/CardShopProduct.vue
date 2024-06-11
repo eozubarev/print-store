@@ -7,7 +7,6 @@
                              :key="image.id"
                              :src="image.src"
                              :alt="image.alt"
-                             preload
                     />
                 </div>
                 <div class="print-product__about">

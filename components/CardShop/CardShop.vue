@@ -18,7 +18,6 @@
                                          :key="image.id"
                                          :src="image.src"
                                          :alt="image.alt"
-                                         loading="lazy"
                                 />
                             </swiper-slide>
                         </swiper>

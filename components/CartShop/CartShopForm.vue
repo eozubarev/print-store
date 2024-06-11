@@ -10,7 +10,6 @@
                                  :key="image.id"
                                  :src="image.src"
                                  :alt="image.alt"
-                                 preload
                         />
                     </div>
                     <div class="cart-form__product_description">
