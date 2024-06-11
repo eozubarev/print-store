@@ -9,5 +9,6 @@ export interface Print {
     name: string;
     description: string;
     price: number;
+    vendorCode: string;
     images: Image[]
 }

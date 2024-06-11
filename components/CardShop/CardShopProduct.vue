@@ -34,16 +34,13 @@
             </div>
         </div>
         <USlideover v-model="isOpen">
-            <div class="p-4 flex-1">
-                Форма заказа
-            </div>
+            <cart-shop-form v-if="printCard" :print="printCard"/>
         </USlideover>
     </div>
 </template>
 
 <script setup lang="ts">
 import {usePrintStore} from "~/store/prints";
-import SkeletonLoad from "~/components/SkeletonLoad/SkeletonLoad.vue";
 
 const {id} = useRoute().params;
 const printsStore = usePrintStore();

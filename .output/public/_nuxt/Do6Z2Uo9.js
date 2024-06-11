@@ -1,0 +1,1 @@
+import{_ as a,c as o,b as n,w as s,ad as c,o as _,M as d}from"./B9XcKqGe.js";const r={},l={class:"layout-default"};function u(e,f){const t=c;return _(),o("div",l,[n(t,null,{default:s(()=>[d(e.$slots,"default",{},void 0,!0)]),_:3})])}const p=a(r,[["render",u],["__scopeId","data-v-982e4a2c"]]);export{p as default};
