@@ -6,7 +6,7 @@ export const printsData: Print[] = [
         name: 'Бессмысленность',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         vendorCode: 'П-001',
-        price: 7_000,
+        price: 13_000,
         images: [{
             id: 1,
             src: 'images/net-sil.JPG',
@@ -17,7 +17,7 @@ export const printsData: Print[] = [
         id: 3,
         name: 'Надежда',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
-        price: 7_000,
+        price: 13_000,
         vendorCode: 'П-002',
         images: [{
             id: 3,
@@ -29,7 +29,7 @@ export const printsData: Print[] = [
         id: 4,
         name: 'Матрица',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
-        price: 7_000,
+        price: 13_000,
         vendorCode: 'П-002',
         images: [{
             id: 3,
