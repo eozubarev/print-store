@@ -4,6 +4,8 @@ export default defineNuxtConfig({
         baseURL: '/print-store/',
         head: {
             title: 'Магазин принтов - Евгений Зубарев',
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1'
         },
     },
     devtools: {enabled: true},
