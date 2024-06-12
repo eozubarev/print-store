@@ -1,5 +1,8 @@
 <template>
-    <div class="card__price">
+    <div class="card__price" :style="{
+        marginTop: props.marginTop,
+        fontSize: props.fontSize
+    }">
         {{ Math.trunc(props.price).toLocaleString('ru-RU') }} ₽
     </div>
 </template>
@@ -10,13 +13,21 @@ const props = defineProps({
         type: Number,
         required: true
     },
+    marginTop: {
+        type: String,
+        default: '13px',
+        required: false
+    },
+    fontSize: {
+        type: String,
+        default: '19px',
+        required: false
+    }
 })
 </script>
 
 <style scoped lang="scss">
 .card__price {
-  margin-top: 13px;
   color: $primaryColor;
-  font-size: 19px;
 }
 </style>

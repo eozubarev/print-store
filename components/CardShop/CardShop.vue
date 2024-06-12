@@ -22,22 +22,30 @@
                     </div>
                 </NuxtLink>
                 <card-shop-price :price="card.price"/>
-                <card-shop-buy @click="isOpen = true"/>
+                <div @click="currentProductId = card.id">
+                    <card-shop-buy @click="cartStore.openSlideover()"/>
+                </div>
+                <cart-shop-form
+                        v-if="card"
+                        :print="getCurrentProduct(printStore.prints, currentProductId)"
+                />
             </div>
         </div>
-        <USlideover v-model="isOpen">
-            <div class="p-4 flex-1">
-                Форма заказа
-            </div>
-        </USlideover>
     </div>
 </template>
 <script setup lang="ts">
 import {usePrintStore} from "~/store/prints";
 import CardShopPrice from "~/components/CardShop/CardShopPrice.vue";
+import {useCartStore} from "~/store/cart";
+import type {Print} from "~/types/print";
 
 const printStore = usePrintStore();
-const isOpen = ref(false)
+const cartStore = useCartStore();
+const currentProductId = ref<number>(0);
+
+function getCurrentProduct(products: Print[], id: number): Print {
+    return products.find(product => product.id === id)
+}
 </script>
 
 <style scoped lang="scss">

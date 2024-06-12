@@ -13,7 +13,7 @@
                     <h3>{{ printCard.name }}</h3>
                     <span>Артикул: {{ printCard.vendorCode }}</span>
                     <card-shop-price :price="printCard.price"/>
-                    <card-shop-buy @click="isOpen = true"/>
+                    <card-shop-buy @click="cartStore.openSlideover()"/>
                     <br>
                     <br>
                     <template v-if="printCard.vendorCode !== 'KV3-250D'">
@@ -49,19 +49,18 @@
                 </div>
             </div>
         </div>
-        <USlideover v-model="isOpen">
-            <cart-shop-form v-if="printCard" :print="printCard"/>
-        </USlideover>
+        <cart-shop-form v-if="printCard" :print="printCard"/>
     </div>
 </template>
 
 <script setup lang="ts">
 import {usePrintStore} from "~/store/prints";
+import {useCartStore} from "~/store/cart";
 
 const {id} = useRoute().params;
 const printsStore = usePrintStore();
 const printCard = printsStore.getPrintCard(Number(id))
-const isOpen = ref(false)
+const cartStore = useCartStore();
 </script>
 
 <style scoped lang="scss">
@@ -77,6 +76,7 @@ const isOpen = ref(false)
   &__image {
     max-width: 750px;
     margin-right: 30px;
+
     & img {
       border-radius: 10px;
     }
