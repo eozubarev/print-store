@@ -23,8 +23,10 @@
                 </NuxtLink>
                 <card-shop-price :price="card.price"/>
                 <div @click="currentProductId = card.id">
-<!--                    <card-shop-buy @click="cartStore.openSlideover()"/>-->
-                    <a href="https://t.me/m/V3-hV-_dMzVi" target="_blank"><card-shop-buy/></a>
+                    <!--                    <card-shop-buy @click="cartStore.openSlideover()"/>-->
+                    <a href="https://t.me/m/V3-hV-_dMzVi" target="_blank">
+                        <card-shop-buy/>
+                    </a>
                 </div>
                 <cart-shop-form
                         v-if="card"
@@ -52,6 +54,10 @@ function getCurrentProduct(products: Print[], id: number): Print {
 <style scoped lang="scss">
 .card {
   cursor: pointer;
+
+  a > button {
+    pointer-events: auto;
+  }
 
   &__description {
     font-family: $unboundedExtraLight;
