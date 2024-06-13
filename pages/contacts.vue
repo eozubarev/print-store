@@ -12,7 +12,7 @@
                     <div class="delivery__right">
                         <h5>Телефон и почта</h5>
                         <p>Мой почта: <a target="_blank" href="mailto:ahotickkk@mail.ru">ahotickkk@mail.ru</a></p>
-                        <p>Мой рабочий телефон: <a target="_blank" href="tel:+79957858480">+7-995-785-8480</a></p>
+                        <p>Мой рабочий телефон: <a target="_blank" href="tel:+79932478968">+7-993-247-8968</a></p>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,8 @@
                 </NuxtLink>
                 <card-shop-price :price="card.price"/>
                 <div @click="currentProductId = card.id">
-                    <card-shop-buy @click="cartStore.openSlideover()"/>
+<!--                    <card-shop-buy @click="cartStore.openSlideover()"/>-->
+                    <a href="https://t.me/m/V3-hV-_dMzVi" target="_blank"><card-shop-buy/></a>
                 </div>
                 <cart-shop-form
                         v-if="card"

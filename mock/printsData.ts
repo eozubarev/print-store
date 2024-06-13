@@ -2,11 +2,11 @@ import type {Print} from "~/types/print";
 
 export const printsData: Print[] = [
     {
-        id: 2,
+        id: 1,
         name: 'Бессмысленность',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         vendorCode: 'П-001',
-        price: 13_000,
+        price: 5_000,
         size: '50x75 см',
         images: [{
             id: 1,
@@ -15,10 +15,36 @@ export const printsData: Print[] = [
         }]
     },
     {
+        id: 2,
+        name: 'Асмодеус',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        vendorCode: 'П-001',
+        price: 5_000,
+        size: '50x75 см',
+        images: [{
+            id: 1,
+            src: 'images/asmodeus.JPG',
+            alt: 'Постер Асмодеус'
+        }]
+    },
+    {
         id: 3,
+        name: 'Асмодеус - 2',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        vendorCode: 'П-001',
+        price: 5_000,
+        size: '50x75 см',
+        images: [{
+            id: 1,
+            src: 'images/asmodeus-2.JPG',
+            alt: 'Постер Асмодеус'
+        }]
+    },
+    {
+        id: 4,
         name: 'Надежда',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
-        price: 13_000,
+        price: 5_000,
         vendorCode: 'П-002',
         size: '50x75 см',
         images: [{
@@ -28,10 +54,10 @@ export const printsData: Print[] = [
         }]
     },
     {
-        id: 4,
+        id: 5,
         name: 'Матрица',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
-        price: 13_000,
+        price: 5_000,
         vendorCode: 'П-002',
         size: '50x75 см',
         images: [{
@@ -41,7 +67,46 @@ export const printsData: Print[] = [
         }]
     },
     {
-        id: 1,
+        id: 6,
+        name: 'Астер',
+        description: 'Постер БЕЗ ЦЕНЗУРЫ на матовой бумаги выского качества (50 x 75 см)',
+        price: 5_000,
+        vendorCode: 'П-002',
+        size: '50x75 см',
+        images: [{
+            id: 3,
+            src: 'images/aster.JPG',
+            alt: 'Постер Астер'
+        }]
+    },
+    {
+        id: 7,
+        name: 'Олимпус',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        price: 5_000,
+        vendorCode: 'П-002',
+        size: '50x75 см',
+        images: [{
+            id: 3,
+            src: 'images/olimpus.JPG',
+            alt: 'Постер олимпус'
+        }]
+    },
+    {
+        id: 8,
+        name: 'Триумф',
+        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        price: 5_000,
+        vendorCode: 'П-002',
+        size: '50x75 см',
+        images: [{
+            id: 3,
+            src: 'images/triumph.JPG',
+            alt: 'Постер триумф'
+        }]
+    },
+    {
+        id: 99,
         name: 'Кинопленка Kodak Vision 3 - 250D',
         description: 'Профессиональная пленка высокого качества для фотографии (35мм)',
         vendorCode: 'KV3-250D',

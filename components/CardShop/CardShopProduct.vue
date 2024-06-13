@@ -13,7 +13,10 @@
                     <h3>{{ printCard.name }}</h3>
                     <span>Артикул: {{ printCard.vendorCode }}</span>
                     <card-shop-price :price="printCard.price"/>
-                    <card-shop-buy @click="cartStore.openSlideover()"/>
+                    <!--                    <card-shop-buy @click="cartStore.openSlideover()"/>-->
+                    <a href="https://t.me/m/V3-hV-_dMzVi" target="_blank">
+                        <card-shop-buy/>
+                    </a>
                     <br>
                     <br>
                     <template v-if="printCard.vendorCode !== 'KV3-250D'">
