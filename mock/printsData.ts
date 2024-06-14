@@ -18,7 +18,7 @@ export const printsData: Print[] = [
         id: 2,
         name: 'Асмодеус',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
-        vendorCode: 'П-001',
+        vendorCode: 'П-002',
         price: 5_000,
         size: '50x75 см',
         images: [{
@@ -31,7 +31,7 @@ export const printsData: Print[] = [
         id: 3,
         name: 'Асмодеус - 2',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
-        vendorCode: 'П-001',
+        vendorCode: 'П-003',
         price: 5_000,
         size: '50x75 см',
         images: [{
@@ -45,7 +45,7 @@ export const printsData: Print[] = [
         name: 'Надежда',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         price: 5_000,
-        vendorCode: 'П-002',
+        vendorCode: 'П-004',
         size: '50x75 см',
         images: [{
             id: 3,
@@ -58,7 +58,7 @@ export const printsData: Print[] = [
         name: 'Матрица',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         price: 5_000,
-        vendorCode: 'П-002',
+        vendorCode: 'П-005',
         size: '50x75 см',
         images: [{
             id: 3,
@@ -71,7 +71,7 @@ export const printsData: Print[] = [
         name: 'Астер',
         description: 'Постер БЕЗ ЦЕНЗУРЫ на матовой бумаги выского качества (50 x 75 см)',
         price: 5_000,
-        vendorCode: 'П-002',
+        vendorCode: 'П-006',
         size: '50x75 см',
         images: [{
             id: 3,
@@ -84,7 +84,7 @@ export const printsData: Print[] = [
         name: 'Олимпус',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         price: 5_000,
-        vendorCode: 'П-002',
+        vendorCode: 'П-007',
         size: '50x75 см',
         images: [{
             id: 3,
@@ -97,7 +97,7 @@ export const printsData: Print[] = [
         name: 'Триумф',
         description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
         price: 5_000,
-        vendorCode: 'П-002',
+        vendorCode: 'П-008',
         size: '50x75 см',
         images: [{
             id: 3,
