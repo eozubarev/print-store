@@ -4,7 +4,7 @@ export const printsData: Print[] = [
     {
         id: 1,
         name: 'Бессмысленность',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         vendorCode: 'П-001',
         price: 5_000,
         size: '50x75 см',
@@ -17,7 +17,7 @@ export const printsData: Print[] = [
     {
         id: 2,
         name: 'Асмодеус',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         vendorCode: 'П-002',
         price: 5_000,
         size: '50x75 см',
@@ -30,7 +30,7 @@ export const printsData: Print[] = [
     {
         id: 3,
         name: 'Асмодеус - 2',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         vendorCode: 'П-003',
         price: 5_000,
         size: '50x75 см',
@@ -43,7 +43,7 @@ export const printsData: Print[] = [
     {
         id: 4,
         name: 'Надежда',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         price: 5_000,
         vendorCode: 'П-004',
         size: '50x75 см',
@@ -56,7 +56,7 @@ export const printsData: Print[] = [
     {
         id: 5,
         name: 'Матрица',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         price: 5_000,
         vendorCode: 'П-005',
         size: '50x75 см',
@@ -69,7 +69,7 @@ export const printsData: Print[] = [
     {
         id: 6,
         name: 'Астер',
-        description: 'Постер БЕЗ ЦЕНЗУРЫ на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер БЕЗ ЦЕНЗУРЫ на матовой бумаги высокого качества (50 x 75 см)',
         price: 5_000,
         vendorCode: 'П-006',
         size: '50x75 см',
@@ -82,7 +82,7 @@ export const printsData: Print[] = [
     {
         id: 7,
         name: 'Олимпус',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         price: 5_000,
         vendorCode: 'П-007',
         size: '50x75 см',
@@ -95,7 +95,7 @@ export const printsData: Print[] = [
     {
         id: 8,
         name: 'Триумф',
-        description: 'Постер на матовой бумаги выского качества (50 x 75 см)',
+        description: 'Постер на матовой бумаги высокого качества (50 x 75 см)',
         price: 5_000,
         vendorCode: 'П-008',
         size: '50x75 см',
